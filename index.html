@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yokeshwar Portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file for styling -->
 </head>
 <body>
-    <H1>Building My Portfolio under progress </H1>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hi, I'm [Your Name], a [Your Profession] based in [Your Location].</p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>[Write a brief paragraph about yourself, your skills, experiences, and background.]</p>
+    </section>
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <ul>
+            <li>
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>[Write a brief description of your project.]</p>
+            </li>
+            <li>
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>[Write a brief description of your project.]</p>
+            </li>
+            <!-- Add more project items as needed -->
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="contact.php" method="post"> <!-- Replace "contact.php" with the path to your backend contact form processing script -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
